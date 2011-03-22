@@ -5,3 +5,4 @@ CLOSED_SITE_SESSION_NAME = getattr(settings,"CLOSED_SITE_SESSION_NAME","closed_s
 CLOSED_SITE_SESSION_VALUE = getattr(settings,"CLOSED_SITE_SESSION_VALUE","x86n023")
 CLOSED_SITE_TEMPLATE = getattr(settings,"CLOSED_SITE_TEMPLATE","closed_site/authenticate.django.html")
 CLOSED_SITE_CLOSED = getattr(settings,"CLOSED_SITE_CLOSED",False)
+CLOSED_SITE_BASE_TEMPLATE = getattr(settings,"CLOSED_SITE_BASE_TEMPLATE",None)

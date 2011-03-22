@@ -1,0 +1,12 @@
+{% extends base_template %}
+
+{% block content %}
+<h1>Closed Site - Enter Authorization Code to View</h1>
+<p>The website you are trying to view is currently closed. In order to view any pages, you must either be logged-in, or enter the correct authorization code below</p>
+<form method="POST" action="{{ form_url }}">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock content %}
