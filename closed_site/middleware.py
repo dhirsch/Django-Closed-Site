@@ -16,6 +16,9 @@ class ClosedSite:
         """
         Checks the session for a simple value match or a logged in user, and redirects to an authenticate page otherwise
         """
+        if settings.CLOSED_SITE_CLOSED == False:
+            return None
+            
         if view_func in self.ignore_views:
             return None
         
